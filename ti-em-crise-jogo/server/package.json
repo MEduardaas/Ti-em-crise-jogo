@@ -1,0 +1,24 @@
+{
+  "name": "ti-em-crise-server",
+  "version": "1.0.0",
+  "description": "API do jogo TI em Crise (catálogo, partidas e ranking)",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "db:reset": "tsx src/db/reset.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "UNLICENSED",
+  "type": "module",
+  "dependencies": {
+    "fastify": "^5.12.8",
+    "mysql2": "^3.24.6",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}

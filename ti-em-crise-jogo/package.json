@@ -1,0 +1,45 @@
+{
+  "name": "ti-em-crise",
+  "private": true,
+  "description": "TI em Crise — Salvem a ServiceUp! Jogo cooperativo para aprender ITIL.",
+  "scripts": {
+    "postinstall": "npm --prefix server install && npm --prefix web install",
+    "dev": "concurrently -n api,web -c cyan,magenta \"npm --prefix server run dev\" \"npm --prefix web run dev\"",
+    "db:reset": "npm --prefix server run db:reset",
+    "build": "npm --prefix web run build",
+    "typecheck": "npm --prefix server run typecheck && npm --prefix web run typecheck"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7",
+    "typescript": "^7.0.2"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "ansi-regex": "^6.6.0",
+    "ansi-styles": "^6.2.3",
+    "chalk": "^5.6.2",
+    "cliui": "^9.0.1",
+    "emoji-regex": "^10.6.0",
+    "escalade": "^3.2.0",
+    "get-caller-file": "^2.0.5",
+    "get-east-asian-width": "^1.7.0",
+    "rxjs": "^7.8.2",
+    "shell-quote": "^1.12.0",
+    "string-width": "^7.2.0",
+    "strip-ansi": "^7.2.0",
+    "supports-color": "^10.2.2",
+    "tree-kill": "^1.2.2",
+    "tslib": "^2.9.1",
+    "wrap-ansi": "^9.0.2",
+    "y18n": "^5.0.8",
+    "yargs": "^18.0.0",
+    "yargs-parser": "^22.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
