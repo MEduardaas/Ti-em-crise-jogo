@@ -1,2 +1,4 @@
 ﻿# Ti-em-crise-jogo
-Jogo desenvolvido para meios acadêmicos 
+ Jogo: TI em Crise 
+ Empresa: ServiceUp
+Jogo desenvolvido para meios acadêmicos, utilizando práticas do ITIL 4
